@@ -5,11 +5,11 @@ export function mapServerData(serverData) {
       id: index,
       type: "Feature",
       isActive: obj.isActive,
-      geometry: 
-      {
-        type: "Point",
-        coordinates: [obj.long, obj.lat]
-      },
+      geometry:
+        {
+          type: "Point",
+          coordinates: [obj.lat, obj.long]
+        },
       properties: {
         iconCaption: obj.serialNumber
       },
